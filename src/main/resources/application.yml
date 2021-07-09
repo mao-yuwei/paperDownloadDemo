@@ -1,0 +1,81 @@
+server:
+  port: 8881
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  application:
+    name: tutorial-paperdownload
+  security:
+    user:
+      name: admin
+      password: 123456
+#  cloud:
+#    config:
+#      fail-fast: true
+#      name: ${spring.application.name}
+#      profile: ${spring.profiles.active}
+#      discovery:
+#        enabled: true
+#        service-id: tutorial-config
+  profiles:
+    active: dev
+  main:
+      allow-bean-definition-overriding: true
+
+#ribbon配置
+ribbon:
+  #建立连接超时时间，原1000
+  ConnectTimeout: 10000
+  #请求处理的超时时间，5分钟
+  ReadTimeout: 60000
+  #所有操作都重试
+  OkToRetryOnAllOperations: true
+  #重试发生，更换节点数最大值
+  MaxAutoRetriesNextServer: 1
+  #单个节点重试最大值
+  MaxAutoRetries: 1
+  #使用httpclient
+  http:
+    client:
+      enabled: true
+  eureka:
+    enabled: true
+
+#feign配置
+feign:
+  #开启熔断
+  hystrix:
+    enabled: true
+  #请求响应gzip压缩
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
+#设置hystrix超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka7001.com:7001/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@eureka7002.com:7001/eureka/
+#       defaultZone: http://192.168.0.115:7001/eureka
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
+    health-check-url-path: /actuator/health
+    status-page-url-path: /actuator/info
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
