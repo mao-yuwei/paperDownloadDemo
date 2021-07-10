@@ -26,6 +26,7 @@
           "questionAnswerInfo": "<div>试题解析：<br>先判断原命题的正误，再根据四种命题之间的关系判断其它命题的正误。<br>解：原命题中若c=0，则ac=bc故原命题不正确；<br>∴逆否命题不正确；<br>逆命题：设a,b,c∈R，若ac>bc，则a>b,该命题正确；<br>则否命题正确；<br>综上所述真命题共有2个。</div>",
           "questionSource": "错题编号：22",
           "questionDifficulty": 1,
+          "questionNumber":1,
           "questionKnowledgeWithStem":1,
           "questionSeparateLine":4
         },
@@ -43,6 +44,7 @@
           "questionAnswerInfo": "<div> 解：如图， <br /><img alt=\"\" src=\"/tikuimages/2/2016/500/xuekubao86/f6742840-935d-11e9-ac2f-b42e9921e93e_xkb46.png\" style=\"vertical-align:middle\" w=\"176px\" h=\"189px\" /> <br />设正方体的棱长为\\(a\\)，则\\(\\triangle D_{1}AC\\)是边长为\\( \\sqrt {2}a\\)的等边三角形， <br />设其外接圆的半径为\\(r\\)，则\\( \\dfrac { \\sqrt {2}a}{\\sin 60 ^{\\circ} }=2r\\)，即\\(r= \\dfrac { \\sqrt {6}}{3}a\\)． <br />由\\( \\dfrac { \\sqrt {6}}{3}a= \\dfrac {2 \\sqrt {6}}{3}\\)，得\\(a=2\\)．<br />\\(∴\\)正方体外接球的\\(R= \\dfrac {1}{2} \\sqrt {2^{2}+2^{2}+2^{2}}= \\sqrt {3}\\)． <br />\\(∴\\)正方体外接球的表面积为\\(4π&times;( \\sqrt {3})^{2}=12π\\)． <br />故选：\\(C\\)．<br />由题意画出图形，设正方体的棱长为\\(a\\)，则\\(\\triangle D_{1}AC\\)是边长为\\( \\sqrt {2}a\\)的等边三角形，由正弦定理列式求得\\(\\triangle D_{1}AC\\)外接圆半径，进一步求得\\(a\\)值，再由正方体体对角线长的平方等于过一个顶点的三条棱的平方和求得正方体外接球的半径，则答案可求．<br />本题考查球的表面积与体积的求法，考查数形结合的解题思想方法，是中档题．</div>",
           "questionSource": "2018·陕西省期末",
           "questionDifficulty": 2,
+          "questionNumber":2,
           "questionKnowledgeWithStem":1,
           "questionSeparateLine":5
         },
@@ -64,6 +66,7 @@
           "questionAnswerInfo": "<div><div>试题分析：<br>注意到分母恒大于或等于0，直接转化为整式不等式求解，注意x≠1.<br>解：<br>\\(\\frac{x+5}{{(x-1)}^{2}}\\)≥2 x+5≥2\\({(x-1)}^{2}\\)且x≠1 2\\({x}^{2}\\)-5x-3≤0且x≠1 [ \\(\\frac{1}{2}\\)，1）∪（1，3]</div><div>故选：D.</div></div>",
           "questionSource": "2014·淮阳县月考",
           "questionDifficulty": 2,
+          "questionNumber":3,
           "questionKnowledgeWithStem":1,
           "questionSeparateLine":4
         },
@@ -81,6 +84,7 @@
           "questionAnswerInfo": "<div>试题分析：<br>根据椭圆及双曲线的离心率求解，再解出渐近线即可。<br>解：椭圆的离心率为：\\({e}_{1}\\)=\\(\\frac{c}{a}\\)=\\(\\frac{\\sqrt{{a}^{2}-{b}^{2}}}{a}\\),<br>双曲线的离心率为：\\({e}_{2}\\)=\\(\\frac{c}{a}\\)=\\(\\frac{\\sqrt{{a}^{2}+{b}^{2}}}{a}\\)<br>\\({e}_{1}\\)\\({e}_{2}\\)=\\(\\frac{\\sqrt{{a}^{4}-{b}^{4}}}{{a}^{2}}\\)=\\(\\frac{\\sqrt{3}}{2}\\),<br>\\({a}^{4}\\)=4\\({b}^{4}\\),<br>\\(\\frac{b}{a}\\)=±\\(\\frac{\\sqrt{2}}{2}\\),所以双曲线的渐进线为：y=±\\(\\frac{\\sqrt{2}}{2}\\)x<br>故选：A.</div>",
           "questionSource": "2014·淮阳县月考",
           "questionDifficulty": 2,
+          "questionNumber":4,
           "questionKnowledgeWithStem":1,
           "questionSeparateLine":7
         }

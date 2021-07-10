@@ -112,9 +112,9 @@
 					</w:pPr>
 					<#if ((qMap.questionIndex)??)>
 						<#if qMap.questionIndex?number<10>
-							<w:r><w:t xml:space="preserve">${(qMap.questionIndex)!""}.  </w:t></w:r>
+							<w:r><w:t xml:space="preserve">${(qMap.questionNumber)!""}.  </w:t></w:r>
 						<#else>
-							<w:r><w:t xml:space="preserve">${(qMap.questionIndex)!""}. </w:t></w:r>
+							<w:r><w:t xml:space="preserve">${(qMap.questionNumber)!""}. </w:t></w:r>
 						</#if>
 						<#if ((qMap.questionSource)??)&&((questionSourceShow)??)&&questionSourceShow?number!=0>
 							<w:r>
@@ -180,6 +180,27 @@
 						</w:r>
 						${(qMap.questionAnswerInfo)!""}
 					</w:p>
+					<#if ((qMap.questionKnowledgeWithStem)??)&&qMap.questionKnowledgeWithStem?number!=0>
+						<w:p w:rsidR="00A81065" w:rsidRDefault="00BF47F0">
+							<w:pPr>
+								<w:textAlignment w:val="center"/>
+								<w:spacing w:line="360" w:lineRule="auto"/>
+								<w:ind w:leftChars="130" w:left="273"/>
+							</w:pPr>
+							<w:r w:rsidRPr="00043B54">
+									<w:t>【知识点】</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00043B54">
+								<w:t>
+								<#if (!((qMap.questionLabelList)??))||(qMap.questionLabelList?size < 1) >
+									<#list qMap.questionLabelList as label>
+										${(label.labelName)!""};
+									</#list>
+								</#if>
+								</w:t>
+							</w:r>
+						</w:p>
+					</#if>
 				</#if>
 					
 				<#if answerType="4">
@@ -504,6 +525,27 @@
 					${(qMap.questionAnswerInfo)!""}
 					
 					</w:p>
+					<#if ((qMap.questionKnowledgeWithStem)??)&&qMap.questionKnowledgeWithStem?number!=0>
+						<w:p w:rsidR="00A81065" w:rsidRDefault="00BF47F0">
+							<w:pPr>
+								<w:textAlignment w:val="center"/>
+								<w:spacing w:line="360" w:lineRule="auto"/>
+								<w:ind w:leftChars="130" w:left="273"/>
+							</w:pPr>
+							<w:r w:rsidRPr="00043B54">
+								<w:t>【知识点】</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00043B54">
+								<w:t>
+									<#if (!((qMap.questionLabelList)??))||(qMap.questionLabelList?size < 1) >
+										<#list qMap.questionLabelList as label>
+											${(label.labelName)!""};
+										</#list>
+									</#if>
+								</w:t>
+							</w:r>
+						</w:p>
+					</#if>
 					
 					<#if ((qMap.qChildQues)??)&&(qMap.qChildQues?size > 0)>
 						<#list qMap.qChildQues as childQueMap>

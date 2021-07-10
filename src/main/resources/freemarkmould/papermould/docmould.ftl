@@ -490,9 +490,9 @@
 						</w:pPr>
 					 <#if ((qMap.questionIndex)??)>
 						<#if qMap.questionIndex?number<10>
-							<w:r><w:t xml:space="preserve">${(qMap.questionIndex)!""}.  </w:t></w:r>
+							<w:r><w:t xml:space="preserve">${(qMap.questionNumber)!""}.  </w:t></w:r>
 						<#else>
-							<w:r><w:t xml:space="preserve">${(qMap.questionIndex)!""}. </w:t></w:r>
+							<w:r><w:t xml:space="preserve">${(qMap.questionNumber)!""}. </w:t></w:r>
 						</#if>
 					 </#if>
 					<#if ((qMap.questionIndex)??)&&((qMap.qScore)??)&&qMap.qScore?number!=0>

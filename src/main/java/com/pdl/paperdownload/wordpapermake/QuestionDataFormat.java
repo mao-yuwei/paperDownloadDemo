@@ -61,6 +61,13 @@ public class QuestionDataFormat {
                 }
                 for(Map<String, Object> qMap:questionsList) {
                     qMap.put("questionIndex",questionIndex++);
+                    //自定义题号
+                    if(qMap.get("questionNumber")==null){
+                        qMap.put("questionNumber",qMap.get("questionIndex"));
+                    }
+                    if(qMap.get("questionSource")!=null){
+                        qMap.put("questionSource","（"+qMap.get("questionSource")+"）");
+                    }
                     //题文word格式化
                     if(qMap.get("questionContent")!=null&&!qMap.get("questionContent").toString().equals("")){
                        String questionContent=qMap.get("questionContent").toString();
