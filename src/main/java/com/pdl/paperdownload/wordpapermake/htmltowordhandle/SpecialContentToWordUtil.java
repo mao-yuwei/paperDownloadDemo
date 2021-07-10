@@ -64,6 +64,7 @@ public class SpecialContentToWordUtil {
         List<String> documentMarkList = new ArrayList<String>();
         Integer width = Integer.parseInt(map.get("width"));
         Integer height = Integer.parseInt(map.get("height"));
+        //图片宽高压缩
         if (height > 14) {
             Integer orignnalHeight = height;
             height = 14 + (height - 14) / 2;
