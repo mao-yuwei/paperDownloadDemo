@@ -35,6 +35,8 @@ public class main {
             String answerType = answerTypeObj == null ? null : answerTypeObj.toString();
             Object fontSizeObj = requestMap.get("fontSize");//正文字号 五号传1，小四传2
             String fontSize = fontSizeObj == null ? null : fontSizeObj.toString();
+            Object questionSourceShowObj = requestMap.get("questionSourceShow");//1：在每个题目中显示来源 0：不显示
+            String questionSourceShow = questionSourceShowObj == null ? null : questionSourceShowObj.toString();
             Object paperNameObj = requestMap.get("paperName");//试卷数据来源：resources/paperdata/下文件名
             String paperName = paperNameObj == null ? null : paperNameObj.toString();
             Map<String, Object> paperMap=getPaperData(paperName);
@@ -42,6 +44,7 @@ public class main {
             paperMap.put("docType",docType);
             paperMap.put("answerType",answerType);
             paperMap.put("paperSizeType",paperSizeType);
+            paperMap.put("questionSourceShow",questionSourceShow);
             ServletOutputStream out=null;
             try {
                 String filename="试卷样例."+docType;

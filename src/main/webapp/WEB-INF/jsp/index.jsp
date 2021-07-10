@@ -37,6 +37,10 @@
         <option value ="3">3.无答案</option>
         <option value ="3">4.每道题后有答案解析知识点</option>
       </select>
+    <select name="questionSourceShow">
+        <option value ="0">不显示来源</option>
+        <option value ="1">显示来源</option>
+    </select>
      <input type="submit" id="btn_download3" value="download" />
 </form>
 

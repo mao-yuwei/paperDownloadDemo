@@ -112,9 +112,14 @@
 					</w:pPr>
 					<#if ((qMap.questionIndex)??)>
 						<#if qMap.questionIndex?number<10>
-							<w:r><w:t xml:space="preserve">${(qMap.questionIndex)!""}.  ${(qMap.questionSource)!""}</w:t></w:r>
+							<w:r><w:t xml:space="preserve">${(qMap.questionIndex)!""}.  </w:t></w:r>
 						<#else>
-							<w:r><w:t xml:space="preserve">${(qMap.questionIndex)!""}. ${(qMap.questionSource)!""}</w:t></w:r>
+							<w:r><w:t xml:space="preserve">${(qMap.questionIndex)!""}. </w:t></w:r>
+						</#if>
+						<#if ((qMap.questionSource)??)&&((questionSourceShow)??)&&questionSourceShow?number!=0>
+							<w:r>
+								<w:t>${(qMap.questionSource)!""}</w:t>
+							</w:r>
 						</#if>
 					</#if>
 					<#if (!((qMap.hasDiv)??))||qMap.hasDiv>
@@ -124,6 +129,11 @@
 					${(qMap.questionContent)!""}
 					${(qMap.questionSelection)!""}
                 </w:p>
+				<#if ((qMap.questionSeparateLine)??)&&qMap.questionSeparateLine?number gt 0>
+                   <#list 0..qMap.questionSeparateLine?number as i>
+		               <w:p w:rsidR="00A81065" w:rsidRDefault="00BF47F0" w:rsidP="00744A41"></w:p>
+                   </#list>
+				</#if>
 				<#if (!((securityMark)??))||securityMark>
 					<#if ((qMap.questionIndex)??)&&(qTList.questionsList?size>(qMap.questionIndex)) >
 						<w:p ><w:r><w:br w:type="page" /></w:r></w:p>

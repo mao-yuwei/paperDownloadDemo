@@ -70,6 +70,8 @@ public class PaperController {
         String answerType = "1";
         String fontSize = "1";
         String paperName = "gdkoala-paper";
+        String questionSourceShow = "1";
+
 
         Map<String, Object> paperMap = getPaperData(paperName);
 
@@ -78,6 +80,7 @@ public class PaperController {
         paperMap.put("answerType", answerType);
         paperMap.put("paperSizeType", paperSizeType);
         paperMap.put("teacherUse", 1);
+        paperMap.put("questionSourceShow",questionSourceShow)
 
         ServletOutputStream out = null;
 
