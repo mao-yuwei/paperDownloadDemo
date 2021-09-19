@@ -931,6 +931,11 @@
 							${(qMap.questionContent)!""}
 							${(qMap.questionSelection)!""}
 					</w:p>
+						<#if ((qMap.questionSeparateLine)??)&&qMap.questionSeparateLine?number gt 0>
+							<#list 0..qMap.questionSeparateLine?number as i>
+								<w:p w:rsidR="00A81065" w:rsidRDefault="00BF47F0" w:rsidP="00744A41"></w:p>
+							</#list>
+						</#if>
 					<#if ((qMap.qChildQues)??)&&(qMap.qChildQues?size > 0)>
 						<#list qMap.qChildQues as childQueMap>
 							<#if (((childQueMap.questionContent)??)&&(childQueMap.questionContent!=""))||(((childQueMap.questionSelection)??)&&(childQueMap.questionSelection!=""))>
@@ -952,11 +957,6 @@
 									${(childQueMap.questionContent)!""}
 									${(childQueMap.questionSelection)!""}
 								</w:p>
-							</#if>
-							<#if (!((scoreTableIsShow)??))||scoreTableIsShow>
-										</w:tc>
-									</w:tr>
-								</w:tbl>
 							</#if>
 						</#list>
 					</#if>
@@ -1131,6 +1131,11 @@
 									</#if>
 								</#list>
 							</#if>
+						</#if>
+						<#if (!((scoreTableIsShow)??))||scoreTableIsShow>
+							</w:tc>
+							</w:tr>
+							</w:tbl>
 						</#if>
 					</#list >
 			</#list >

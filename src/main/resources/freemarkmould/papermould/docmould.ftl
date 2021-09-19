@@ -884,7 +884,7 @@
 						</w:r>
 					</w:p>
 				</#if>
-				<#list qTList.questionsList as qMap>
+			<#list qTList.questionsList as qMap>
 				<#if (!((scoreTableIsShow)??))||scoreTableIsShow>
 					<w:tbl>
 						<w:tblPr>
@@ -1001,11 +1001,6 @@
 								${(childQueMap.questionContent)!""}
 								${(childQueMap.questionSelection)!""}
 							</w:p>
-						</#if>
-						<#if (!((scoreTableIsShow)??))||scoreTableIsShow>
-							   </w:tc>
-							  </w:tr>
-							</w:tbl>
 						</#if>
 					</#list>
 				</#if>
@@ -1181,6 +1176,11 @@
 						         </#list>
 								</#if>
 					       </#if>
+						<#if (!((scoreTableIsShow)??))||scoreTableIsShow>
+							</w:tc>
+							</w:tr>
+							</w:tbl>
+						</#if>
 				   </#list >
 				</#list > 
 				        <w:bookmarkStart w:id="0" w:name="_GoBack"/>
