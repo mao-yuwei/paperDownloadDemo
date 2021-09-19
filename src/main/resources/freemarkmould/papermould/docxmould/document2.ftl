@@ -23,7 +23,411 @@
 									<v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
 									<o:lock v:ext="edit" aspectratio="t"/>
 								</v:shapetype>
-					     </w:pict>	
+					     </w:pict>
+		<#if (!((studentInfoIsShow)??))||studentInfoIsShow>
+			<w:tbl>
+				<w:tblPr>
+					<w:tblW w:w="10583" w:type="dxa"/>
+					<w:tblInd w:w="392" w:type="dxa"/>
+					<w:tblBorders>
+						<w:top w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+						<w:left w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+						<w:bottom w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+						<w:right w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+						<w:insideH w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+						<w:insideV w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+					</w:tblBorders>
+					<w:tblLayout w:type="fixed"/>
+					<w:tblLook w:val="0000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="0" w:noVBand="0"/>
+				</w:tblPr>
+				<w:tblGrid>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="627"/>
+					<w:gridCol w:w="628"/>
+					<w:gridCol w:w="3685"/>
+				</w:tblGrid>
+				<w:tr w:rsidR="00930738" w14:paraId="7102EFE1" w14:textId="77777777" w:rsidTr="00930738">
+					<w:trPr>
+						<w:trHeight w:val="820"/>
+					</w:trPr>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="42DDF09C" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:hint="eastAsia"/>
+									<w:b/>
+								</w:rPr>
+								<w:t>姓名</w:t>
+							</w:r>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="5764760C" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="4411A158" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="736797E3" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="683AE762" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="36CB87A0" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:hint="eastAsia"/>
+									<w:b/>
+								</w:rPr>
+								<w:t>年级</w:t>
+							</w:r>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="391EC39E" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="6C434A9B" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="6C91FDB7" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:hint="eastAsia"/>
+									<w:b/>
+								</w:rPr>
+								<w:t>班级</w:t>
+							</w:r>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="37BF346A" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="628" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="3D4AA5BE" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="3685" w:type="dxa"/>
+							<w:vMerge w:val="restart"/>
+						</w:tcPr>
+						<w:p w14:paraId="73C53EB1" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="005D768B">
+							<w:pPr>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+				</w:tr>
+				<w:tr w:rsidR="00930738" w14:paraId="012D3A21" w14:textId="77777777" w:rsidTr="00930738">
+					<w:trPr>
+						<w:trHeight w:val="817"/>
+					</w:trPr>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="18B97404" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:hint="eastAsia"/>
+									<w:b/>
+								</w:rPr>
+								<w:t>考号</w:t>
+							</w:r>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="1DA478E0" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="49BDDE6D" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="140AC628" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="7C6095BD" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="205D701E" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="3BA2FD80" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="76E3DFBA" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="1F0AE6AC" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="627" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="004010F5" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="628" w:type="dxa"/>
+							<w:vAlign w:val="center"/>
+						</w:tcPr>
+						<w:p w14:paraId="34D72A85" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="00930738">
+							<w:pPr>
+								<w:jc w:val="center"/>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="3685" w:type="dxa"/>
+							<w:vMerge/>
+						</w:tcPr>
+						<w:p w14:paraId="3D870DE7" w14:textId="77777777" w:rsidR="00930738" w:rsidRDefault="00930738" w:rsidP="005D768B">
+							<w:pPr>
+								<w:rPr>
+									<w:b/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+				</w:tr>
+			</w:tbl>
+		</#if>
 				<#if (!((securityMark)??))||securityMark>
 					<w:p w:rsidR="00C93DDE" w:rsidRPr="00F56D61" w:rsidRDefault="00BF47F0" w:rsidP="00C93DDE">
 						<w:pPr>
@@ -437,12 +841,75 @@
 						</w:p>
 					</#if>
 					<#list qTList.questionsList as qMap>
+					<#if (!((scoreTableIsShow)??))||scoreTableIsShow>
+						<w:tbl>
+							<w:tblPr>
+								<w:tblStyle w:val="ab"/>
+								<w:tblW w:w="0" w:type="auto"/>
+								<w:tblInd w:w="392" w:type="dxa"/>
+								<w:tblBorders>
+									<w:top w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+									<w:left w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+									<w:bottom w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+									<w:right w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+									<w:insideH w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+									<w:insideV w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+								</w:tblBorders>
+								<w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+							</w:tblPr>
+							<w:tblGrid>
+								<#if ((scoreTable)??)&&(scoreTable?size>0)>
+									<#list scoreTable as score>
+										<w:gridCol w:w="657"/>
+									</#list>
+								</#if>
+							</w:tblGrid>
+							<w:tr w:rsidR="00701DFF" w14:paraId="24CC95A6" w14:textId="77777777" w:rsidTr="000D3774">
+								<w:trPr>
+									<w:trHeight w:val="597"/>
+								</w:trPr>
+								<#if ((scoreTable)??)&&(scoreTable?size>0)>
+									<#list scoreTable as score>
+										<w:tc>
+											<w:tcPr>
+												<w:tcW w:w="657" w:type="dxa"/>
+											</w:tcPr>
+											<w:p w14:paraId="0E4FF434" w14:textId="77777777" w:rsidR="00701DFF" w:rsidRPr="00B06B71" w:rsidRDefault="00701DFF" w:rsidP="00F37E9C">
+												<w:pPr>
+													<w:jc w:val="center"/>
+													<w:rPr>
+														<w:b/>
+														<w:sz w:val="28"/>
+														<w:szCs w:val="28"/>
+													</w:rPr>
+												</w:pPr>
+												<w:r>
+													<w:rPr>
+														<w:rFonts w:hint="eastAsia"/>
+														<w:b/>
+														<w:sz w:val="28"/>
+														<w:szCs w:val="28"/>
+													</w:rPr>
+													<w:t>${(score)!""}</w:t>
+												</w:r>
+											</w:p>
+										</w:tc>
+									</#list>
+								</#if>
+							</w:tr>
+							<w:tr w:rsidR="00F74953" w14:paraId="4B95C9AE" w14:textId="77777777" w:rsidTr="00E61A53">
+								<w:tc>
+									<w:tcPr>
+										<w:tcW w:w="10518" w:type="dxa"/>
+										<w:gridSpan w:val="16"/>
+									</w:tcPr>
+					</#if>
 						<w:p w:rsidR="00A81065" w:rsidRDefault="00BF47F0" w:rsidP="00744A41">
 							<w:pPr>
 								<w:pStyle w:val="a7"/>
 								<w:ind w:firstLineChars="0"/>
 								<w:textAlignment w:val="center"/>
-								<w:spacing w:line="360" w:lineRule="auto"/>
+								<w:spacing w:beforeLines="50" w:before="156" w:line="360" w:lineRule="auto"/>
 							</w:pPr>
 							<#if ((qMap.questionIndex)??)>
 								<#if qMap.questionIndex?number<10>
@@ -485,6 +952,11 @@
 									${(childQueMap.questionContent)!""}
 									${(childQueMap.questionSelection)!""}
 								</w:p>
+							</#if>
+							<#if (!((scoreTableIsShow)??))||scoreTableIsShow>
+										</w:tc>
+									</w:tr>
+								</w:tbl>
 							</#if>
 						</#list>
 					</#if>

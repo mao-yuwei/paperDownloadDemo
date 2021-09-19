@@ -42,6 +42,18 @@ public class QuestionDataFormat {
      *@Desc:  试卷数据处理为word样式
      */
     public static Map<String, Object> htmlPaperToWordStyle(Map<String, Object> paperMap) {
+
+
+
+        //学生信息表格是否展示
+        boolean studentInfoIsShow = true;
+        //分数表格框是否展示（识别）
+        boolean scoreTableIsShow = true;
+        paperMap.put("studentInfoIsShow",studentInfoIsShow);
+        paperMap.put("scoreTableIsShow",scoreTableIsShow);
+
+
+
         Integer questionIndex=1;//试题序号
         String questionTypeCategorybefore="";
         String tempMediaPath=IMAGE_PATH+ UUID.randomUUID().toString()+"/";//图片临时存放路径
@@ -60,6 +72,9 @@ public class QuestionDataFormat {
                     questionTypeCategorybefore=questionTypeCategory;
                 }
                 for(Map<String, Object> qMap:questionsList) {
+                    List<String> scoreTableList = Arrays.asList("1","0.5","","","10","9","8","7","6","5","4","3","2","1","0","0.5");
+                    qMap.put("scoreTable",scoreTableList);
+
                     qMap.put("questionIndex",questionIndex++);
                     //自定义题号
                     if(qMap.get("questionNumber")==null){
